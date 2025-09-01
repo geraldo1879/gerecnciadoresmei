@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pneus em Oferta - Sua Loja</title>
+  <style>
+    body { margin:0; font-family: Arial, sans-serif; background:#f8f9fa; color:#222; }
+    header { background:#111; color:#fff; padding:1rem; text-align:center; }
+    header h1 { margin:0; font-size:1.8rem; }
+    .hero { text-align:center; padding:2rem 1rem; background:#222; color:#fff; }
+    .hero h2 { font-size:2rem; margin-bottom:1rem; }
+    .hero p { font-size:1.1rem; margin-bottom:1.5rem; }
+    .btn { display:inline-block; padding:0.9rem 1.5rem; margin:0.3rem; border-radius:6px; font-weight:bold; text-decoration:none; transition:0.2s; }
+    .btn-primary { background:#28a745; color:#fff; }
+    .btn-primary:hover { background:#218838; }
+    .btn-outline { border:2px solid #fff; color:#fff; }
+    .btn-outline:hover { background:#fff; color:#222; }
+    .section { padding:2rem 1rem; text-align:center; }
+    .grid { display:grid; gap:1rem; grid-template-columns:repeat(auto-fit, minmax(220px,1fr)); max-width:1100px; margin:0 auto; }
+    .card { background:#fff; border:1px solid #ddd; border-radius:8px; padding:1rem; box-shadow:0 2px 4px rgba(0,0,0,0.05); }
+    .card h3 { margin-top:0; color:#28a745; }
+    form { max-width:500px; margin:0 auto; background:#fff; padding:1.5rem; border-radius:8px; box-shadow:0 2px 6px rgba(0,0,0,0.1); }
+    form input, form select, form textarea { width:100%; padding:0.8rem; margin-bottom:1rem; border:1px solid #ccc; border-radius:6px; }
+    form button { width:100%; padding:1rem; background:#28a745; color:#fff; border:none; border-radius:6px; font-weight:bold; cursor:pointer; }
+    form button:hover { background:#218838; }
+    footer { background:#111; color:#aaa; padding:1rem; text-align:center; font-size:0.9rem; }
+    @media (max-width:600px){ .hero h2 { font-size:1.5rem; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Loja de Pneus</h1>
+    <p>Qualidade, preço justo e instalação rápida</p>
+  </header>
+
+  <section class="hero">
+    <h2>Pneus em Promoção</h2>
+    <p>Troca rápida, garantia de 12 meses e parcelamento em até 10x sem juros.</p>
+    <a href="#orcamento" class="btn btn-primary">Pedir Orçamento</a>
+    <a href="https://wa.me/5571999999999" target="_blank" class="btn btn-outline">WhatsApp</a>
+  </section>
+
+  <section class="section">
+    <h2>Medidas mais procuradas</h2>
+    <div class="grid">
+      <div class="card"><h3>185/60 R14</h3><p>A partir de R$ 299</p></div>
+      <div class="card"><h3>195/55 R15</h3><p>A partir de R$ 329</p></div>
+      <div class="card"><h3>205/55 R16</h3><p>A partir de R$ 399</p></div>
+      <div class="card"><h3>215/60 R17</h3><p>A partir de R$ 449</p></div>
+    </div>
+  </section>
+
+  <section class="section" id="orcamento">
+    <h2>Solicite seu orçamento</h2>
+    <form>
+      <input type="text" name="nome" placeholder="Seu nome" required>
+      <input type="tel" name="telefone" placeholder="Telefone/WhatsApp" required>
+      <input type="text" name="veiculo" placeholder="Modelo do veículo">
+      <select name="aro">
+        <option value="">Selecione o Aro</option>
+        <option>ARO 14</option>
+        <option>ARO 15</option>
+        <option>ARO 16</option>
+        <option>ARO 17</option>
+        <option>ARO 18+</option>
+      </select>
+      <textarea name="mensagem" placeholder="Mensagem"></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 - Loja de Pneus · Rua Exemplo, 123 - Sua Cidade/UF · Tel: (71) 99999-9999</p>
+  </footer>
+</body>
+</html>
